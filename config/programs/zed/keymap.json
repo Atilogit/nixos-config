@@ -1,0 +1,15 @@
+[
+  {
+    "bindings": {
+      "shift-backspace": "editor::DeleteLine",
+      "shift-delete": "editor::DeleteLine"
+    },
+    "context": "Editor"
+  },
+  {
+    "bindings": {
+      "ctrl-r": "projects::OpenRecent"
+    },
+    "context": "Workspace"
+  }
+]

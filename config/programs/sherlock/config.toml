@@ -1,0 +1,10 @@
+[default_apps]
+browser = "firefox --new-tab"
+
+[debug]
+try_suppress_warnings = true # TODO
+
+[behavior]
+caching = true
+daemonize = false
+animate = false

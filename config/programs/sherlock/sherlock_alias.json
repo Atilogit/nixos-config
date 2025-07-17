@@ -1,0 +1,12 @@
+{
+  "Vesktop": {
+    "name": "Discord",
+    "exec": "vesktop --enable-blink-features=MiddleClickAutoscroll %U",
+    "keywords": "discord;vesktop"
+  },
+  "Spotify": {
+    "name": "Spotify",
+    "exec": "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-blink-features=MiddleClickAutoscroll %U",
+    "keywords": "spotify"
+  }
+}

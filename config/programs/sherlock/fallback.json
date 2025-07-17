@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Calculator",
+    "type": "calculation",
+    "priority": 1,
+    "args": {
+      "capabilities": ["calc.math", "calc.units"]
+    }
+  },
+  {
+    "name": "Clipboard",
+    "type": "clipboard-execution",
+    "priority": 1,
+    "args": {
+      "capabilities": ["url", "colors.all", "calc.units"]
+    },
+
+    "home": true
+  },
+  {
+    "name": "App Launcher",
+    "type": "app_launcher",
+    "priority": 2,
+    "args": {},
+
+    "home": true
+  },
+  {
+    "name": "Bookmarks",
+    "type": "bookmarks",
+    "priority": 2,
+    "args": {
+      "icon": "sherlock-bookmark",
+      "icon_class": "reactive"
+    }
+  },
+  {
+    "name": "Emoji Picker",
+    "type": "emoji_picker",
+    "priority": 2,
+    "args": {}
+  },
+  {
+    "name": "Power Management",
+    "type": "command",
+    "priority": 3,
+    "args": {
+      "commands": {
+        "Shutdown": {
+          "icon": "system-shutdown",
+          "exec": "systemctl poweroff",
+          "search_string": "Poweroff;Shutdown"
+        },
+        "Sleep": {
+          "icon": "system-suspend",
+          "exec": "systemctl suspend",
+          "search_string": "Sleep;Suspend"
+        },
+        "Reboot": {
+          "icon": "system-reboot",
+          "exec": "systemctl reboot",
+          "search_string": "reboot"
+        }
+      }
+    }
+  },
+  {
+    "name": "Google Search",
+    "type": "web_launcher",
+    "priority": 100,
+    "args": {
+      "search_engine": "google",
+      "icon": "google"
+    },
+
+    "display_name": "Google Search",
+    "tag_start": "{keyword}"
+  },
+  {
+    "name": "YouTube Search",
+    "priority": 101,
+    "type": "web_launcher",
+    "args": {
+      "search_engine": "https://www.youtube.com/results?search_query={keyword}",
+      "icon": "sherlock-youtube"
+    },
+
+    "display_name": "Youtube Search",
+    "tag_start": "{keyword}"
+  },
+  {
+    "name": "ProtonDB",
+    "priority": 102,
+    "type": "web_launcher",
+    "args": {
+      "search_engine": "https://www.protondb.com/search?q={keyword}",
+      "icon": "sherlock-protondb"
+    },
+
+    "display_name": "ProtonDB",
+    "tag_start": "{keyword}"
+  },
+  {
+    "name": "Kill Process",
+    "type": "process",
+    "priority": 0,
+    "args": {},
+
+    "alias": "kill"
+  }
+]
