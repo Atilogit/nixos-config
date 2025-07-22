@@ -17,7 +17,7 @@
     mission-center # task manager
     decibels # audio player
     loupe # image viewer
-    totem # video player
+    vlc
     tracy # profiler
     rnote
     anytype
