@@ -4,8 +4,16 @@
   "theme.font.name": "Noto Sans",
   "theme.font.label": "Noto Sans",
   "bar.layouts": {
-    "0": {},
-    "1": {},
+    "0": {
+      "left": ["workspaces"],
+      "middle": [],
+      "right": ["ram", "cpu", "clock"]
+    },
+    "1": {
+      "left": ["workspaces"],
+      "middle": [],
+      "right": ["ram", "cpu", "clock"]
+    },
     "2": {
       "left": ["workspaces", "media"],
       "middle": ["windowtitle"],
