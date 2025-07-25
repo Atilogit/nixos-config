@@ -9,6 +9,7 @@
     fastfetch
     tokei
     vulkan-tools
+    inotify-tools
 
     # GUI
     vesktop
