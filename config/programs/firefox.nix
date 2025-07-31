@@ -70,6 +70,13 @@
           "default_area" = "menupanel";
           "private_browsing" = true;
         };
+        # Adaptive Tab Bar Color
+        "ATBC@EasonWong" = {
+          "installation_mode" = "force_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi";
+          "default_area" = "menupanel";
+          "private_browsing" = true;
+        };
       };
     };
     # Settings that policies don't allow
