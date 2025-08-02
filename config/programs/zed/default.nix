@@ -50,17 +50,17 @@
       "mermaid"
       "ssh-config"
     ];
-    extraPackages = with pkgs; [
-      package-version-server
-
-      # LSP
-      nil
-      nixd
-      hyprls
-      marksman
-      clang-tools
-    ];
     userKeymaps = lib.importJSON ./keymap.json;
     userSettings = lib.importJSON ./settings.json;
   };
+  environment.systemPackages = with pkgs; [
+    package-version-server
+
+    # LSP
+    nil
+    nixd
+    hyprls
+    marksman
+    clang-tools
+  ];
 }
