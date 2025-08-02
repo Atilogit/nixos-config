@@ -6,6 +6,7 @@
     wget
     ncdu
     unzip
+    zip
     btop
     fastfetch
     tokei
