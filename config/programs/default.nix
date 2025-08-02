@@ -11,6 +11,7 @@
     tokei
     vulkan-tools
     inotify-tools
+    ffmpeg
 
     # GUI
     vesktop
