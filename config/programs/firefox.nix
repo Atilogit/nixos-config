@@ -73,7 +73,22 @@
         # Adaptive Tab Bar Color
         "ATBC@EasonWong" = {
           "installation_mode" = "force_installed";
-          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi";
+          "install_url" =
+            "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi";
+          "default_area" = "menupanel";
+          "private_browsing" = true;
+        };
+        # New Tab Same Group
+        "addon@new-tab-same-group.dev" = {
+          "installation_mode" = "force_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/new-tab-same-group/latest.xpi";
+          "default_area" = "menupanel";
+          "private_browsing" = true;
+        };
+        # Auto tab groups
+        "{442789cf-4ff6-4a85-bf5b-53aa3282f1a2}" = {
+          "installation_mode" = "force_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/auto-tab-groups/latest.xpi";
           "default_area" = "menupanel";
           "private_browsing" = true;
         };
