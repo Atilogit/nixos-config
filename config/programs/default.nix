@@ -13,6 +13,7 @@
     vulkan-tools
     inotify-tools
     ffmpeg
+    wl-clipboard
 
     # GUI
     vesktop

@@ -29,14 +29,13 @@
   home-manager.users.atilo.services.hyprpaper = {
     enable = true;
     settings = {
-      preload = toString ./wallpaper.png;
-      wallpaper = "," + toString ./wallpaper.png;
+      preload = toString ../../../assets/wallpaper.png;
+      wallpaper = "," + toString ../../../assets/wallpaper.png;
     };
   };
 
   environment.systemPackages = with pkgs; [
     hyprpicker # Color picker
-    wl-clipboard # Dependency of hyperpicker
     hyprshot # Screenshot
     socat # Used in scripts
   ];
