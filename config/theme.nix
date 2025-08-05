@@ -13,22 +13,25 @@
     gtk = {
       enable = true;
       theme = {
-        name = "Adwaita";
+        name = "Fluent-round-Dark";
+        package = pkgs.fluent-gtk-theme.override {
+          tweaks = [
+            "square"
+            "blur"
+            "round"
+          ];
+        };
       };
       iconTheme = {
-        package = pkgs.adwaita-icon-theme;
-        name = "Adwaita";
-      };
-      font = {
-        name = "Noto Sans Medium";
-        size = 11;
+        name = "Fluent-dark";
+        package = pkgs.fluent-icon-theme;
       };
     };
+  };
 
-    qt = {
-      enable = true;
-      style.package = pkgs.adwaita-qt;
-      style.name = "adwaita-dark";
-    };
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita-dark";
   };
 }

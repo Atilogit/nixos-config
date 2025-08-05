@@ -15,4 +15,15 @@
       enable = true;
       source = ./AKG_K701_Average_Variant_3_stereo.irs;
     };
+  programs.dconf.profiles.user.databases = [
+    {
+      lockAll = true;
+      settings = {
+        "com/github/wwmm/easyeffects" = {
+          process-all-inputs = true;
+          use-cubic-volumes = true;
+        };
+      };
+    }
+  ];
 }
