@@ -39,7 +39,7 @@
       "scss"
       "kotlin"
       "proto"
-      "cargotom" # Cargo.toml suggestions
+      "cargo-tom" # Cargo.toml suggestions
       "scala"
       "just"
       "gdscript"
