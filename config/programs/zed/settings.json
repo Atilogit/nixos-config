@@ -107,6 +107,11 @@
           "closureStyle": "rust_analyzer"
         }
       }
+    },
+    "cargo-tom": {
+      "initialization_options": {
+        "hide_docs_info_message": true
+      }
     }
   },
   "experimental.theme_overrides": {
