@@ -10,3 +10,6 @@
 - https://github.com/alonso-herreros/hyprcap
 - Discord cant stream other windows when run with sherlock
   - maybe systemd doesnt provide all env vars
+- Record video shortcut (wf-recorder)
+- Move libs from rust/shell.nix into nix-ld
+- Sherlock sets GSK_RENDERER=cairo which forces cpu rendering from apps launched with it
