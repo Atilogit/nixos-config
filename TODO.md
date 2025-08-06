@@ -13,3 +13,6 @@
 - Record video shortcut (wf-recorder)
 - Move libs from rust/shell.nix into nix-ld
 - Sherlock sets GSK_RENDERER=cairo which forces cpu rendering from apps launched with it
+- https://github.com/JakeStanger/ironbar
+- https://github.com/H3rmt/hyprshell
+- Try appflowy
