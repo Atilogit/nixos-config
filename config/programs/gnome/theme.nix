@@ -7,12 +7,6 @@ in
     {
       lockAll = true;
       settings = {
-        "org/gnome/desktop/interface" = {
-          color-scheme = "prefer-dark";
-        };
-        "org/gnome/shell/extensions/user-theme" = {
-          name = "Fluent-round-Dark";
-        };
         "org/gnome/desktop/background" = {
           picture-options = "spanned";
           picture-uri = "file://" + (toString background);

@@ -13,14 +13,8 @@
     gtk = {
       enable = true;
       theme = {
-        name = "Fluent-round-Dark";
-        package = pkgs.fluent-gtk-theme.override {
-          tweaks = [
-            "square"
-            "blur"
-            "round"
-          ];
-        };
+        name = "Flat-Remix-GTK-Grey-Dark";
+        package = pkgs.flat-remix-gtk;
       };
       iconTheme = {
         name = "Fluent-dark";
@@ -28,6 +22,20 @@
       };
     };
   };
+
+  programs.dconf.profiles.user.databases = [
+    {
+      lockAll = true;
+      settings = {
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+        };
+        "org/gnome/shell/extensions/user-theme" = {
+          name = "Flat-Remix-GTK-Grey-Dark";
+        };
+      };
+    }
+  ];
 
   qt = {
     enable = true;
