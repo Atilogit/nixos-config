@@ -5,8 +5,8 @@
       gtk.enable = true;
       hyprcursor.enable = true;
       x11.enable = true;
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
+      package = pkgs.vimix-cursors;
+      name = "Vimix-white-cursors";
       size = 24;
     };
 
