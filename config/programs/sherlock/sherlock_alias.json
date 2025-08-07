@@ -8,5 +8,14 @@
     "name": "Spotify",
     "exec": "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-blink-features=MiddleClickAutoscroll %U",
     "keywords": "spotify"
+  },
+  "Firefox": {
+    "add_actions": [
+      {
+        "name": "Profile Manager",
+        "exec": "firefox --ProfileManager",
+        "method": "app_launcher"
+      }
+    ]
   }
 }

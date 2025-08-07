@@ -8,3 +8,6 @@ try_suppress_warnings = true # TODO
 caching = true
 daemonize = false
 animate = false
+
+[binds]
+context = "control-return"
