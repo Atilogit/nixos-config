@@ -28,7 +28,8 @@
               path:
               let
                 entries = nixpkgs.lib.filterAttrs (
-                  name: type: (nixpkgs.lib.hasSuffix ".nix" name) || type == "directory"
+                  name: type:
+                  ((nixpkgs.lib.hasSuffix ".nix" name) || type == "directory") && !(nixpkgs.lib.hasPrefix "_" name)
                 ) (builtins.readDir path);
                 files = builtins.attrNames entries;
               in
