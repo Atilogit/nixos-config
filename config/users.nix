@@ -2,7 +2,10 @@
 {
   users.users.atilo = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [
+      "wheel" # Enable ‘sudo’ for the user.
+      "audio" # Pipewire rtprio and memlock
+    ];
     packages = [ ];
   };
 }
