@@ -16,7 +16,6 @@
     wl-clipboard
 
     # GUI
-    vesktop
     spotify
     audacity
     mission-center # task manager

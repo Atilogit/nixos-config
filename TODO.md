@@ -5,7 +5,6 @@
 - https://mynixos.com/home-manager/options/programs.bash
 - https://mynixos.com/home-manager/options/programs.mangohud
 - https://mynixos.com/home-manager/options/programs.obs-studio
-- https://mynixos.com/home-manager/options/programs.vesktop
 - https://github.com/nix-community/impermanence
 - https://github.com/alonso-herreros/hyprcap
 - Discord cant stream other windows when run with sherlock
@@ -16,3 +15,4 @@
 - https://github.com/JakeStanger/ironbar
 - https://github.com/H3rmt/hyprshell
 - Try appflowy
+- Stylix
