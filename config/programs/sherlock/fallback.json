@@ -15,7 +15,7 @@
       "capabilities": ["url", "colors.all", "calc.units"]
     },
 
-    "home": true
+    "home": "Home"
   },
   {
     "name": "App Launcher",
@@ -23,7 +23,7 @@
     "priority": 2,
     "args": {},
 
-    "home": true
+    "home": "Home"
   },
   {
     "name": "Bookmarks",
