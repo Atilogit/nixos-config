@@ -3,7 +3,6 @@
 - yazi plugins
 - https://mynixos.com/home-manager/options/programs.bash
 - https://mynixos.com/home-manager/options/programs.mangohud
-- https://mynixos.com/home-manager/options/programs.obs-studio
 - https://github.com/nix-community/impermanence
 - Record video shortcut (wf-recorder)
 - Move libs from rust/shell.nix into nix-ld
