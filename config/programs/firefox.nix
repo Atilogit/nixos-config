@@ -85,13 +85,6 @@
           "default_area" = "menupanel";
           "private_browsing" = true;
         };
-        # Auto tab groups
-        "{442789cf-4ff6-4a85-bf5b-53aa3282f1a2}" = {
-          "installation_mode" = "force_installed";
-          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/auto-tab-groups/latest.xpi";
-          "default_area" = "menupanel";
-          "private_browsing" = true;
-        };
       };
     };
     # Settings that policies don't allow
