@@ -6,10 +6,11 @@ let
     with lib;
     appimageTools.wrapType2 rec {
       pname = "osu-lazer-bin";
-      version = "2025.702.0-tachyon";
+      version = "2025.808.0-tachyon";
       src = fetchurl {
         url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
-        hash = "sha256-qlL6SZRITpTzur96Ge4AZmxH5pnd6tnuDIm6enppVu4=";
+        # Use lib.fakeHash when updating
+        hash = "sha256-MaS+rtX1cwZ8qRhSvMvFRDaWOluDV7yoIlQq9xrxqm8=";
       };
       extraPkgs = pkgs: with pkgs; [ icu ];
 
@@ -20,6 +21,7 @@ let
         ''
           mv -v $out/bin/${pname} $out/bin/osu\!
           install -m 444 -D ${contents}/osu\!.desktop -t $out/share/applications
+          install -m 444 -D ${./mimetypes.xml} $out/share/mime/packages/${pname}.xml
           for i in 16 32 48 64 96 128 256 512 1024; do
             install -D ${contents}/osu.png $out/share/icons/hicolor/''${i}x$i/apps/osu.png
           done
@@ -28,6 +30,7 @@ let
 in
 {
   environment.systemPackages = [ osu-pkg ];
+  xdg.mime.defaultApplications."x-scheme-handler/osu" = "osu!.desktop";
   hardware.opentabletdriver.enable = true;
   hardware.opentabletdriver.daemon.enable = false;
 }
