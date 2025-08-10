@@ -12,7 +12,7 @@
     tokei
     vulkan-tools
     inotify-tools
-    ffmpeg
+    ffmpeg-full
     wl-clipboard
 
     # GUI
