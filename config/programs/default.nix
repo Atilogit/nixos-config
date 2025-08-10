@@ -25,6 +25,7 @@
     tracy # profiler
     rnote
     anytype
+    (blender.override { cudaSupport = true; })
 
     # Games
     archipelago
