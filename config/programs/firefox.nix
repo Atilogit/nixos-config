@@ -21,6 +21,8 @@
         "media.autoplay.default" = 0; # Allow autoplay
         "media.videocontrols.picture-in-picture.enabled" = false;
         "browser.ml.chat.shortcuts" = false;
+        "extensions.formautofill.addresses.enabled" = false;
+        "extensions.formautofill.creditCards.enabled" = false;
       };
       "DisableTelemetry" = true;
       "DisablePocket" = true;
