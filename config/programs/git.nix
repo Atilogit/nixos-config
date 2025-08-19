@@ -14,4 +14,6 @@
   environment.systemPackages = with pkgs; [
     git-credential-manager
   ];
+
+  home-manager.users.atilo.programs.gitui.enable = true;
 }

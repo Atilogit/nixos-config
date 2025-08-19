@@ -1,0 +1,30 @@
+[editor]
+line-number = "relative"
+cursorline = true
+completion-timeout = 5 # instant
+preview-completion-insert = false
+rulers = [100]
+bufferline = "multiple"
+color-modes = true
+text-width = 100
+trim-final-newlines = true
+trim-trailing-whitespace = true
+end-of-line-diagnostics = "hint"
+
+[editor.lsp]
+display-progress-messages = true
+display-inlay-hints = true
+inlay-hints-length-limit = 20
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.inline-diagnostics]
+other-lines = "error"
+cursor-line = "hint"
