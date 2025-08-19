@@ -26,13 +26,7 @@
   };
 
   # Wallpaper
-  home-manager.users.atilo.services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload = toString ../../../assets/wallpaper.png;
-      wallpaper = "," + toString ../../../assets/wallpaper.png;
-    };
-  };
+  home-manager.users.atilo.services.hyprpaper.enable = true;
 
   environment.systemPackages = with pkgs; [
     hyprpicker # Color picker

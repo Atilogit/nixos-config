@@ -1,21 +1,9 @@
 { ... }:
-let
-  background = ../../../assets/wallpaper.png;
-in
 {
   programs.dconf.profiles.user.databases = [
     {
       lockAll = true;
       settings = {
-        "org/gnome/desktop/background" = {
-          picture-options = "spanned";
-          picture-uri = "file://" + (toString background);
-          picture-uri-dark = "file://" + (toString background);
-        };
-        "org/gnome/desktop/screensaver" = {
-          picture-options = "spanned";
-          picture-uri = "file://" + (toString background);
-        };
         "org/gnome/desktop/wm/preferences" = {
           button-layout = "appmenu:minimize,maximize,close";
           action-double-click-titlebar = "toggle-maximize";

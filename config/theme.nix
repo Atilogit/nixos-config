@@ -12,10 +12,6 @@
 
     gtk = {
       enable = true;
-      theme = {
-        name = "Flat-Remix-GTK-Grey-Dark";
-        package = pkgs.flat-remix-gtk;
-      };
       iconTheme = {
         name = "Fluent-dark";
         package = pkgs.fluent-icon-theme;
@@ -23,23 +19,32 @@
     };
   };
 
-  programs.dconf.profiles.user.databases = [
-    {
-      lockAll = true;
-      settings = {
-        "org/gnome/desktop/interface" = {
-          color-scheme = "prefer-dark";
-        };
-        "org/gnome/shell/extensions/user-theme" = {
-          name = "Flat-Remix-GTK-Grey-Dark";
-        };
-      };
-    }
-  ];
-
   qt = {
     enable = true;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
+  };
+
+  stylix.enable = true;
+  home-manager.users.atilo.stylix.targets.zed.enable = false; # Doesn't look good
+
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/onedark.yaml";
+  stylix.image = ../assets/wallpaper.png;
+  stylix.polarity = "dark";
+
+  # Config
+  stylix.fonts = {
+    monospace = {
+      package = pkgs.nerd-fonts.fira-code;
+      name = "FiraCode Nerd Font";
+    };
+    sizes = {
+      applications = 10.65;
+      desktop = 9;
+    };
+  };
+  stylix.opacity = {
+    desktop = 0.8;
+    applications = 0.8;
+    terminal = 0.8;
+    popups = 0.8;
   };
 }
