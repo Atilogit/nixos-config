@@ -2,16 +2,16 @@
   description = "Atilo's config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134"; # nixos-unstable
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
-    home-manager.url = "github:nix-community/home-manager?rev=cc2fa2331aebf9661d22bb507d362b39852ac73f";
+    home-manager.url = "github:nix-community/home-manager?ref=master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     chaotic.url = "github:chaotic-cx/nyx?rev=b342f1adfa040963c9b00f4f1755def9f8588a58";
     chaotic.inputs.home-manager.follows = "home-manager";
     chaotic.inputs.nixpkgs.follows = "nixpkgs";
 
-    stylix.url = "github:danth/stylix?rev=9810b32b9b7520e3b37358ff8e793fb5034c3299";
+    stylix.url = "github:danth/stylix?ref=master";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
