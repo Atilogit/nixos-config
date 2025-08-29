@@ -62,5 +62,6 @@
     hyprls
     marksman
     clang-tools
+    kdePackages.qtdeclarative # qmlls
   ];
 }
