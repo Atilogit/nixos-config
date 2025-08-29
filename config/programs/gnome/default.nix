@@ -60,7 +60,7 @@
         };
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal" = {
           binding = "<Super>x";
-          command = "alacritty";
+          command = "ghostty";
           name = "Terminal";
         };
         "org/gnome/desktop/wm/keybindings" = {
