@@ -13,15 +13,14 @@
 
     stylix.url = "github:danth/stylix?rev=9810b32b9b7520e3b37358ff8e793fb5034c3299";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs =
     {
       self,
       nixpkgs,
-      home-manager,
-      chaotic,
-      stylix,
       ...
     }@inputs:
     {
@@ -51,9 +50,10 @@
           in
           (nixpkgs.lib.filter (p: p != ./flake.nix) (listFilesRecursive ./.))
           ++ [
-            home-manager.nixosModules.home-manager
-            chaotic.nixosModules.default
-            stylix.nixosModules.stylix
+            inputs.home-manager.nixosModules.home-manager
+            inputs.chaotic.nixosModules.default
+            inputs.stylix.nixosModules.stylix
+            inputs.nix-flatpak.nixosModules.nix-flatpak
           ];
       };
     };
