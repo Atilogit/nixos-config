@@ -14,6 +14,7 @@
     inotify-tools
     ffmpeg-full
     wl-clipboard
+    file
 
     # GUI
     spotify
