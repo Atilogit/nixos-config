@@ -55,6 +55,9 @@ in
     text = ''
       [spice]
       enable = no
+
+      [app]
+      renderer = opengl
     '';
   };
 }
