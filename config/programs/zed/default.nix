@@ -49,6 +49,7 @@
       "nim"
       "mermaid"
       "ssh-config"
+      "kdl"
     ];
     userKeymaps = lib.importJSON ./keymap.json;
     userSettings = lib.importJSON ./settings.json;

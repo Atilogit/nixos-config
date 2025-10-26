@@ -24,6 +24,27 @@
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
     hyprsplit.url = "github:shezdy/hyprsplit/?ref=v0.51.1";
     hyprsplit.inputs.hyprland.follows = "hyprland";
+
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Dank material shell
+    dgop = {
+      url = "github:AvengeMedia/dgop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dms-cli = {
+      url = "github:AvengeMedia/danklinux";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.dgop.follows = "dgop";
+      inputs.dms-cli.follows = "dms-cli";
+    };
   };
 
   outputs =

@@ -20,13 +20,8 @@
   };
 
   # Bar
-  home-manager.users.atilo.programs.hyprpanel = {
-    enable = true;
-    settings = lib.importJSON ./hyprpanel-config.json;
-  };
 
   # Wallpaper
-  home-manager.users.atilo.services.hyprpaper.enable = true;
 
   environment.systemPackages = with pkgs; [
     hyprpicker # Color picker
