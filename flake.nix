@@ -16,9 +16,6 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
-    quickshell.url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-    quickshell.inputs.nixpkgs.follows = "nixpkgs";
-
     # Hyprland and plugins
     hyprland.url = "github:hyprwm/Hyprland/?ref=v0.51.1";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
