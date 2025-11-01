@@ -1,4 +1,3 @@
 set -e
 cd /home/atilo/nix
-sudo nixos-rebuild switch --flake .
-./diff.sh
+nix run nixpkgs#nh -- os switch .

@@ -1,5 +1,4 @@
 set -e
 cd /home/atilo/nix
-nixos-rebuild build --flake .
-nix run nixpkgs#dix -- /nix/var/nix/profiles/system result
+nix run nixpkgs#nh -- os build .
 rm result
