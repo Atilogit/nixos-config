@@ -50,6 +50,7 @@
       "mermaid"
       "ssh-config"
       "kdl"
+      "caddyfile"
     ];
     userKeymaps = lib.importJSON ./keymap.json;
     userSettings = lib.importJSON ./settings.json;
@@ -64,5 +65,6 @@
     marksman
     clang-tools
     kdePackages.qtdeclarative # qmlls
+    caddy # caddyfile
   ];
 }
