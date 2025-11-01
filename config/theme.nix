@@ -26,6 +26,10 @@
   stylix.enable = true;
   home-manager.users.atilo.stylix.targets.zed.enable = false; # Doesn't look good
 
+  # qgnomeplatform doesn't build
+  home-manager.users.atilo.stylix.targets.qt.enable = false;
+  stylix.targets.qt.enable = false;
+
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/onedark.yaml";
   stylix.image = ../assets/wallpaper.png;
   stylix.polarity = "dark";

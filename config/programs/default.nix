@@ -26,7 +26,8 @@
     tracy # profiler
     rnote
     anytype
-    (blender.override { cudaSupport = true; })
+    blender # cuda broken
+    # (blender.override { cudaSupport = true; })
 
     # Games
     archipelago
