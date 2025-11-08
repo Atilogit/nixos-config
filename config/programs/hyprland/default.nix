@@ -3,8 +3,9 @@
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
   programs.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
   home-manager.users.atilo.wayland.windowManager.hyprland = {
     enable = true;
@@ -18,7 +19,7 @@
     portalPackage = null;
 
     plugins = with pkgs.hyprlandPlugins; [
-      inputs.hyprsplit.packages.${pkgs.system}.hyprsplit
+      inputs.hyprsplit.packages.${pkgs.stdenv.hostPlatform.system}.hyprsplit
     ];
   };
 }
