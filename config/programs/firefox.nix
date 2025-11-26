@@ -23,6 +23,7 @@
         "browser.ml.chat.shortcuts" = false;
         "extensions.formautofill.addresses.enabled" = false;
         "extensions.formautofill.creditCards.enabled" = false;
+        "browser.tabs.min_inactive_duration_before_unload" = 2147483647; # Disable tab unloading
       };
       "DisableTelemetry" = true;
       "DisablePocket" = true;
@@ -69,7 +70,7 @@
         "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/proton-pass/latest.xpi";
-          "default_area" = "menupanel";
+          "default_area" = "navbar";
           "private_browsing" = true;
         };
         # Adaptive Tab Bar Color
@@ -85,6 +86,13 @@
           "installation_mode" = "force_installed";
           "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/new-tab-same-group/latest.xpi";
           "default_area" = "menupanel";
+          "private_browsing" = true;
+        };
+        # Dark Reader
+        "addon@darkreader.org" = {
+          "installation_mode" = "force_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
+          "default_area" = "navbar";
           "private_browsing" = true;
         };
       };
