@@ -8,5 +8,9 @@
     xorg.libX11
     xorg.libICE
     xorg.libSM
+    xorg.libXext
+    xorg.libXrender
+    xorg.libXtst
+    xorg.libXi
   ];
 }
