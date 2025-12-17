@@ -15,6 +15,8 @@
     ffmpeg-full
     wl-clipboard
     file
+    usbutils
+    docker-compose
 
     # GUI
     spotify
