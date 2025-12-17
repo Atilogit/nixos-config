@@ -5,6 +5,8 @@
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs; [ proton-ge-bin ];
+    remotePlay.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
   };
   environment.systemPackages = with pkgs; [
     heroic
