@@ -18,6 +18,7 @@
     pkgs.gnome-system-monitor
     pkgs.gnome-weather
     pkgs.gnome-connections # Remote desktop
+    pkgs.gnome-calculator
     pkgs.epiphany # Browser
     pkgs.snapshot # Camera
     pkgs.totem # Video player
