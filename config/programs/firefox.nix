@@ -24,6 +24,8 @@
         "extensions.formautofill.addresses.enabled" = false;
         "extensions.formautofill.creditCards.enabled" = false;
         "browser.tabs.min_inactive_duration_before_unload" = 2147483647; # Disable tab unloading
+        "browser.link.open_newwindow.override.external" = 7; # Open links from apps next to your active tab
+        "browser.tabs.groups.smart.optin" = true; # Local AI tab group names
       };
       "DisableTelemetry" = true;
       "DisablePocket" = true;
