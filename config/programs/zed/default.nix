@@ -66,5 +66,7 @@
     clang-tools
     kdePackages.qtdeclarative # qmlls
     caddy # caddyfile
+    jdk
+    protobuf-language-server
   ];
 }
