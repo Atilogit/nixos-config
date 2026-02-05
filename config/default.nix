@@ -7,6 +7,7 @@
     "flakes"
   ];
   nix.optimise.automatic = true;
+  boot.loader.systemd-boot.configurationLimit = 5;
 
   # Home-manager
   home-manager.useUserPackages = true;
