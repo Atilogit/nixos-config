@@ -16,12 +16,6 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
-    # Hyprland and plugins
-    hyprland.url = "github:hyprwm/Hyprland/?ref=v0.52.2";
-    hyprland.inputs.nixpkgs.follows = "nixpkgs";
-    hyprsplit.url = "github:shezdy/hyprsplit/?ref=v0.52.2";
-    hyprsplit.inputs.hyprland.follows = "hyprland";
-
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
