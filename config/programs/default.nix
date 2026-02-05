@@ -17,8 +17,12 @@
     file
     usbutils
     docker-compose
+    android-tools # adb
+    dix
 
     # GUI
+    inkscape
+    helvum
     obsidian
     krita
     spotify
@@ -30,8 +34,7 @@
     tracy # profiler
     rnote
     anytype
-    blender # cuda broken
-    # (blender.override { cudaSupport = true; })
+    (blender.override { cudaSupport = true; })
 
     # Games
     archipelago
