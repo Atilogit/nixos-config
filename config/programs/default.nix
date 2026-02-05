@@ -19,6 +19,7 @@
     docker-compose
 
     # GUI
+    obsidian
     krita
     spotify
     audacity
