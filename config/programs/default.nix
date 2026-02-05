@@ -19,6 +19,7 @@
     docker-compose
 
     # GUI
+    krita
     spotify
     audacity
     mission-center # task manager
