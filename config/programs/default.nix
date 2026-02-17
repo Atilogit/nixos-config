@@ -23,7 +23,9 @@
     # GUI
     inkscape
     helvum
-    obsidian
+    (obsidian.override {
+      commandLineArgs = "--ozone-platform=wayland --enable-features=WaylandWindowDecorations --enable-wayland-ime=true --enable-blink-features=MiddleClickAutoscroll";
+    })
     krita
     spotify
     audacity
