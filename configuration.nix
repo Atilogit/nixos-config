@@ -12,6 +12,9 @@
 
   # boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride { mArch = "ZEN4"; };
+  boot.kernelParams = [
+    "nvme_core.default_ps_max_latency_us=0" # Disable APST to fix suspend failing
+  ];
 
   # Nvidia
   boot.blacklistedKernelModules = [
