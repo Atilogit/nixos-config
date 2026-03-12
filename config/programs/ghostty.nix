@@ -1,7 +1,7 @@
 { ... }:
 {
   home-manager.users.atilo.programs.ghostty = {
-    enable = true;
+    enable = false;
     settings = {
       scrollback-limit = 10000000; # 10MB
       copy-on-select = "clipboard"; # System clipboard
