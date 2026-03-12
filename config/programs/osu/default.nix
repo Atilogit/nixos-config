@@ -32,5 +32,5 @@ in
   environment.systemPackages = [ osu-pkg ];
   xdg.mime.defaultApplications."x-scheme-handler/osu" = "osu!.desktop";
   hardware.opentabletdriver.enable = true;
-  hardware.opentabletdriver.daemon.enable = false;
+  hardware.opentabletdriver.daemon.enable = true;
 }
