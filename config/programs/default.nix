@@ -22,7 +22,7 @@
 
     # GUI
     inkscape
-    helvum
+    crosspipe
     (obsidian.override {
       commandLineArgs = "--ozone-platform=wayland --enable-features=WaylandWindowDecorations --enable-wayland-ime=true --enable-blink-features=MiddleClickAutoscroll";
     })

@@ -16,7 +16,7 @@
     portalPackage = null;
 
     plugins = with pkgs.hyprlandPlugins; [
-      hyprsplit
+      # hyprsplit TODO
     ];
   };
 }
