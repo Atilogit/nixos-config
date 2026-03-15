@@ -5,12 +5,12 @@
     icu
     fontconfig
 
-    xorg.libX11
-    xorg.libICE
-    xorg.libSM
-    xorg.libXext
-    xorg.libXrender
-    xorg.libXtst
-    xorg.libXi
+    libx11
+    libice
+    libsm
+    libxext
+    libxrender
+    libxtst
+    libxi
   ];
 }
