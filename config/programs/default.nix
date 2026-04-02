@@ -37,6 +37,7 @@
     rnote
     anytype
     (blender.override { cudaSupport = true; })
+    musescore
 
     # Games
     archipelago
