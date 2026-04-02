@@ -15,6 +15,7 @@
   boot.kernelParams = [
     "nvme_core.default_ps_max_latency_us=0" # Disable APST to fix suspend failing
   ];
+  boot.kernelModules = [ "ntsync" ];
 
   # Nvidia
   boot.blacklistedKernelModules = [
