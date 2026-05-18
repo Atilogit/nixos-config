@@ -1,5 +1,3 @@
-# My nixos config
-
-Work in progress, see [TODO.md](/TODO.md).
-
-![](screenshots/image.png)
+nh os build .#baller
+nh os boot .#baller
+nh os switch .#baller
