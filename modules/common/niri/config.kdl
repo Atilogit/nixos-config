@@ -49,6 +49,12 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match title="^Syncthing Tray$"
+    open-floating true
+    default-floating-position x=0 y=0 relative-to="top-right"
+}
+
 spawn-at-startup "spotify"
 spawn-at-startup "DiscordCanary"
 spawn-at-startup "firefox"
