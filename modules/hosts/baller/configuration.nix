@@ -22,8 +22,10 @@
       networking.hostName = "baller";
 
       # Kernel
+      nixpkgs.overlays = [ inputs.nix-cachyos-kernel.overlays.default ];
+      boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-bore-lto-zen4;
+
       boot.kernelModules = [ "ntsync" ];
-      boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
       powerManagement = {
         enable = true;
         cpuFreqGovernor = "performance";
