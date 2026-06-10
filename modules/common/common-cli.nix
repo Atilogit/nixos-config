@@ -1,7 +1,7 @@
 { ... }:
 {
   flake.nixosModules.common-cli =
-    { pkgs, ... }:
+    { pkgs, config, ... }:
     {
       environment.systemPackages = with pkgs; [
         wget
@@ -25,7 +25,7 @@
       programs.direnv.enable = true;
       programs.nh = {
         enable = true;
-        flake = "/home/atilo/nix-new#baller";
+        flake = "/home/atilo/nix-new#${config.networking.hostName}";
       };
     };
 }

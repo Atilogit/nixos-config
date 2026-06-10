@@ -1,0 +1,31 @@
+// Disable decorations and background drawing
+prefer-no-csd
+window-rule {
+    draw-border-with-background false
+    geometry-corner-radius 9
+    clip-to-geometry true
+}
+
+layout {
+    gaps 5
+    struts {
+        left 3
+        right 3
+    }
+
+    empty-workspace-above-first
+
+    focus-ring {
+        width 1
+    }
+
+    shadow {
+        on
+    }
+}
+
+animations {
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=5000 epsilon=0.0001
+    }
+}

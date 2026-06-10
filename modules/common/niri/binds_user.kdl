@@ -1,0 +1,9 @@
+binds {
+    Mod+E { spawn "nautilus"; }
+    Mod+Return { spawn "alacritty"; }
+
+    Mod+XF86Launch6 hotkey-overlay-title="Cast Monitor" { set-dynamic-cast-monitor; }
+    Mod+Shift+XF86Launch6 hotkey-overlay-title="Cast Window" { set-dynamic-cast-window; }
+
+    Mod+Ctrl+Shift+F { maximize-window-to-edges; }
+}

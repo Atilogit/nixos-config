@@ -8,6 +8,7 @@
       # Features
       nvidia-gpu
       ollama-nvidia
+      noctalia
     ];
   };
 
@@ -33,6 +34,5 @@
       # First version installed on this machine
       # DO NOT CHANGE
       system.stateVersion = "25.05";
-      # home-manager.sharedModules.home.stateVersion = "25.05"; # TODO
     };
 }

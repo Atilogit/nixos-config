@@ -24,6 +24,9 @@
       # Network
       networking.networkmanager.enable = true;
 
+      # Wayland
+      environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
       # Internationalisation properties
       time.timeZone = "Europe/Berlin";
       services.xserver.xkb.layout = "eu";

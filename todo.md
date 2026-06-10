@@ -1,4 +1,3 @@
-- home-manager user generic
 - common-cli, common-gui
 - wrapper-modules
-- stateVersion
+- discord screenshare xdg.portal

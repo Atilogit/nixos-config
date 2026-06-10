@@ -48,28 +48,6 @@
         snapshot
         yelp # Help viewer for GNOME
 
-        # Games
-        aisleriot
-        atomix
-        five-or-more
-        four-in-a-row
-        gnome-2048
-        gnome-chess
-        gnome-klotski
-        gnome-mahjongg
-        gnome-mines
-        gnome-nibbles
-        gnome-robots
-        gnome-sudoku
-        gnome-taquin
-        gnome-tetravex
-        hitori
-        iagno
-        lightsoff
-        quadrapassel
-        swell-foop
-        tali
-
         dconf-editor
         devhelp
         d-spy
@@ -82,5 +60,12 @@
       programs.seahorse.enable = true;
       services.gnome.sushi.enable = true; # TODO try
       services.sysprof.enable = true;
+
+      # For nautilus
+      services.gvfs.enable = true;
+      programs.nautilus-open-any-terminal = {
+        enable = true;
+        terminal = "alacritty";
+      };
     };
 }
