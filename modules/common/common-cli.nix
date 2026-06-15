@@ -20,6 +20,7 @@
         docker-compose
         android-tools # adb
         dix
+        openconnect
       ];
 
       programs.direnv.enable = true;

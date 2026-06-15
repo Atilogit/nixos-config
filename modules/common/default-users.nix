@@ -10,6 +10,7 @@
           "audio" # Pipewire rtprio and memlock
           "libvirtd" # VMs
           "kvm" # Looking glass kvmfr
+          "networkmanager"
         ];
         packages = [ ];
       };
