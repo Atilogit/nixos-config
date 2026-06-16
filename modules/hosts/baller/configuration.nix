@@ -7,7 +7,6 @@
 
       # Features
       nvidia-gpu
-      ollama-nvidia
       noctalia
     ];
   };

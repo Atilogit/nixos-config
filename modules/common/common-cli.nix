@@ -21,6 +21,7 @@
         android-tools # adb
         dix
         openconnect
+        llama-cpp-vulkan
       ];
 
       programs.direnv.enable = true;
