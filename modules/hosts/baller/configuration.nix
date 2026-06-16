@@ -7,6 +7,8 @@
 
       # Features
       nvidia-gpu
+
+      niri
       noctalia
     ];
   };
