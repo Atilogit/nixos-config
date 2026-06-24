@@ -43,6 +43,11 @@
         xdg-desktop-portal-gnome
         gnome-keyring
       ];
+
+      programs.kdeconnect = {
+        enable = true;
+        package = pkgs.valent;
+      };
     };
   perSystem =
     {

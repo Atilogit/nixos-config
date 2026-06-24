@@ -8,8 +8,10 @@
       # Features
       nvidia-gpu
 
-      niri
-      noctalia
+      # niri
+      # noctalia
+
+      plasma
     ];
   };
 
