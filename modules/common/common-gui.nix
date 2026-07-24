@@ -20,6 +20,7 @@
         (blender.override { cudaSupport = true; })
         musescore
         mangohud
+        renderdoc
 
         # Gnome
         xdg-user-dirs
