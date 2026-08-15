@@ -94,6 +94,55 @@
               "default_area" = "navbar";
               "private_browsing" = true;
             };
+            # Consent-O-Matic
+            "gdpr@cavi.au.dk" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/consent-o-matic/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
+            # SingleFile
+            "{531906d3-e22f-4a6c-a102-8057b88a1a63}" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/single-file/latest.xpi";
+              "default_area" = "navbar";
+              "private_browsing" = true;
+            };
+            # Tampermonkey
+            "firefox@tampermonkey.net" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/tampermonkey/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
+            # SteamDB
+            "firefox-extension@steamdb.info" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
+            # LocalCDN
+            "{b86e4813-687a-43e6-ab65-0bde4ab75758}" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
+            # Return YouTube Dislike
+            "{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
+            # ActivityWatch
+            "{ef87d84c-2127-493f-b952-5b4e744245bc}" = {
+              "installation_mode" = "force_installed";
+              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/aw-watcher-web/latest.xpi";
+              "default_area" = "menupanel";
+              "private_browsing" = true;
+            };
           };
         };
         # Settings that policies don't allow
