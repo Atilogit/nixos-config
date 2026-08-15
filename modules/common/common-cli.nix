@@ -22,6 +22,7 @@
         dix
         openconnect
         llama-cpp-vulkan
+        poppler-utils # pdfunite
       ];
 
       programs.direnv.enable = true;
