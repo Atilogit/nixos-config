@@ -21,6 +21,7 @@
         musescore
         mangohud
         renderdoc
+        handy
 
         # Gnome
         xdg-user-dirs
