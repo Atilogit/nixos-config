@@ -22,6 +22,7 @@
         mangohud
         renderdoc
         handy
+        kdePackages.filelight # Really fast disk usage
 
         # Gnome
         xdg-user-dirs
