@@ -1,12 +1,12 @@
 { ... }:
 {
   flake.nixosModules.obs =
-    { pkgs, ... }:
+    { pkgs-stable, ... }:
     {
       programs.obs-studio = {
         enable = true;
         enableVirtualCamera = true;
-        package = pkgs.obs-studio.override { cudaSupport = true; };
+        package = pkgs-stable.obs-studio.override { cudaSupport = true; };
       };
     };
 }
