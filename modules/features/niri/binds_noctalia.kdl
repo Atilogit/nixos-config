@@ -1,8 +1,8 @@
 binds {
     // Application Launchers
-    Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "noctalia-shell" "ipc" "call" "launcher" "toggle";
-    }
+    // Mod+Space hotkey-overlay-title="Application Launcher" {
+    //     spawn "noctalia-shell" "ipc" "call" "launcher" "toggle";
+    // }
 
     // Audio Controls
     XF86AudioRaiseVolume allow-when-locked=true {

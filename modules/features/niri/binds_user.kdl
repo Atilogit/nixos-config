@@ -6,4 +6,8 @@ binds {
     Mod+Shift+XF86Launch6 hotkey-overlay-title="Cast Window" { set-dynamic-cast-window; }
 
     Mod+Ctrl+Shift+F { maximize-window-to-edges; }
+
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn "vicinae" "toggle";
+    }
 }

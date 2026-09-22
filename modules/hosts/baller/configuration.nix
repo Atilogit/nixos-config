@@ -8,11 +8,11 @@
       # Features
       nvidia-gpu
 
-      # niri
-      # noctalia
+      niri
+      noctalia
       vicinae
 
-      plasma
+      # plasma
     ];
     specialArgs = {
       pkgs-stable = import inputs.nixpkgs-stable {

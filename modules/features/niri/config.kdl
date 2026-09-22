@@ -1,4 +1,11 @@
-screenshot-path null // Don't save screenshots to disk
+// Startup
+spawn-at-startup "spotify"
+spawn-at-startup "DiscordCanary"
+spawn-at-startup "firefox"
+spawn-at-startup "obsidian"
+spawn-at-startup "alacritty"
+
+screenshot-path "~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png"
 
 // Disable middle click paste
 clipboard { disable-primary; }
@@ -55,11 +62,6 @@ window-rule {
     default-floating-position x=0 y=0 relative-to="top-right"
 }
 
-spawn-at-startup "spotify"
-spawn-at-startup "DiscordCanary"
-spawn-at-startup "firefox"
-spawn-at-startup "obsidian"
-
 // Games VRR
 window-rule {
     variable-refresh-rate true
@@ -72,17 +74,35 @@ window-rule {
     open-floating true
 
     match app-id="^localsend_app$"
+    match app-id="^org.kde.filelight$"
 }
 
 window-rule {
     block-out-from "screencast"
 
-    match app-id="^obsidian$"
+    match app-id="^md.obsidian.Obsidian$"
     match app-id="^firefox$" title="WhatsApp"
 }
 
+// Blur
 window-rule {
     background-effect {
         blur true
+        noise 0.05
+    }
+}
+window-rule {
+    match is-floating=true
+
+    background-effect {
+        xray false
+    }
+}
+layer-rule {
+    match layer="top"
+    match layer="overlay"
+
+    background-effect {
+        xray false
     }
 }
