@@ -136,13 +136,6 @@
               "default_area" = "menupanel";
               "private_browsing" = true;
             };
-            # ActivityWatch
-            "{ef87d84c-2127-493f-b952-5b4e744245bc}" = {
-              "installation_mode" = "force_installed";
-              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/aw-watcher-web/latest.xpi";
-              "default_area" = "menupanel";
-              "private_browsing" = true;
-            };
           };
         };
         # Settings that policies don't allow
