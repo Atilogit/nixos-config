@@ -16,12 +16,11 @@
         vlc
         tracy # profiler
         rnote
-        anytype
         (pkgs-stable.blender.override { cudaSupport = true; })
         musescore
         mangohud
         renderdoc
-        handy
+        handy # Voice to text
         kdePackages.filelight # Really fast disk usage
 
         # Gnome
@@ -29,38 +28,28 @@
         xdg-user-dirs-gtk
 
         decibels # Play audio files
-        gnome-calculator
-        gnome-calendar
-        gnome-characters
         gnome-clocks
-        gnome-console
         gnome-contacts
-        gnome-font-viewer
         gnome-logs
         gnome-maps
-        gnome-music
-        gnome-system-monitor
-        gnome-weather
         loupe # Image viewer
         nautilus # File manager for GNOME
         papers
-        gnome-connections
-        showtime # Video player
+        gnome-connections # Remote desktop
         simple-scan
-        snapshot
+        snapshot # Camera
         yelp # Help viewer for GNOME
 
         dconf-editor
         devhelp
         d-spy
         gnome-boxes # https://github.com/NixOS/nixpkgs/issues/60908
-        sysprof
+        sysprof # Profiler
       ];
 
-      services.orca.enable = true;
-      programs.gnome-disks.enable = true;
-      programs.seahorse.enable = true;
-      services.gnome.sushi.enable = true; # TODO try
+      services.orca.enable = true; # Barcode scanner
+      programs.gnome-disks.enable = true; # Partition manager
+      programs.seahorse.enable = true; # Trust store
       services.sysprof.enable = true;
 
       # For nautilus
