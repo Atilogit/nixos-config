@@ -48,5 +48,11 @@
       xdg.mime.defaultApplications."x-scheme-handler/osu" = "osu!.desktop";
       hardware.opentabletdriver.enable = true;
       hardware.opentabletdriver.daemon.enable = true;
+
+      # https://xstarry.dev/firmware
+      services.udev.extraRules = ''
+        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="056a", MODE="0660", GROUP="users", TAG+="uaccess"
+        SUBSYSTEM=="usb", ATTR{idVendor}=="0ac3", MODE="0660", GROUP="users", TAG+="uaccess"
+      '';
     };
 }
