@@ -10,7 +10,7 @@
     {
       # Import all common modules
       imports = map (n: self.nixosModules.${n}) (
-        map (lib.removeSuffix ".nix") (map baseNameOf ((inputs.import-tree.withLib lib).leafs ../common))
+        map (lib.removeSuffix ".nix") (map baseNameOf ((inputs.import-tree.withLib lib).leaves ../common))
       );
 
       # Nix
