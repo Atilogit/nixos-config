@@ -10,6 +10,7 @@
 
       # niri
       # noctalia
+      vicinae
 
       plasma
     ];
