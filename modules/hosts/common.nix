@@ -20,6 +20,7 @@
         "flakes"
       ];
       nix.optimise.automatic = true;
+      nix.gc.automatic = true;
 
       # Network
       networking.networkmanager.enable = true;
