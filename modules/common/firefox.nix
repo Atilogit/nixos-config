@@ -26,7 +26,7 @@
             "browser.ml.chat.shortcuts" = false;
             "extensions.formautofill.addresses.enabled" = false;
             "extensions.formautofill.creditCards.enabled" = false;
-            "browser.tabs.min_inactive_duration_before_unload" = 2147483647; # Disable tab unloading
+            # "browser.tabs.min_inactive_duration_before_unload" = 2147483647; # Disable tab unloading
             "browser.link.open_newwindow.override.external" = 7; # Open links from apps next to your active tab
             "browser.tabs.groups.smart.optin" = true; # Local AI tab group names
             "browser.tabs.insertAfterCurrent" = true; # Tabs next to current and in same group
@@ -125,14 +125,16 @@
             # LocalCDN
             "{b86e4813-687a-43e6-ab65-0bde4ab75758}" = {
               "installation_mode" = "force_installed";
-              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi";
+              "install_url" =
+                "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi";
               "default_area" = "menupanel";
               "private_browsing" = true;
             };
             # Return YouTube Dislike
             "{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
               "installation_mode" = "force_installed";
-              "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi";
+              "install_url" =
+                "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi";
               "default_area" = "menupanel";
               "private_browsing" = true;
             };
