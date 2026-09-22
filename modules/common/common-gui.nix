@@ -1,7 +1,7 @@
 { ... }:
 {
   flake.nixosModules.common-gui =
-    { pkgs, ... }:
+    { pkgs, pkgs-stable, ... }:
     {
       environment.systemPackages = with pkgs; [
         inkscape
@@ -17,7 +17,7 @@
         tracy # profiler
         rnote
         anytype
-        (blender.override { cudaSupport = true; })
+        (pkgs-stable.blender.override { cudaSupport = true; })
         musescore
         mangohud
         renderdoc
@@ -28,7 +28,6 @@
         xdg-user-dirs
         xdg-user-dirs-gtk
 
-        baobab # Graphical application to analyse disk usage in any GNOME environment
         decibels # Play audio files
         gnome-calculator
         gnome-calendar

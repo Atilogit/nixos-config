@@ -1,6 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nixpkgs-26.05-darwin
+    nixpkgs-stable.url = "github:nixos/nixpkgs?rev=d58a46e3bc02d91ebe04667f8397752a749c0024";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";

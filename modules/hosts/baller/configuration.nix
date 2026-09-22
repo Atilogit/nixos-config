@@ -13,6 +13,12 @@
 
       plasma
     ];
+    specialArgs = {
+      pkgs-stable = import inputs.nixpkgs-stable {
+        system = "x86_64-linux";
+        config.allowUnfree = true;
+      };
+    };
   };
 
   flake.nixosModules.ballerConfig =
