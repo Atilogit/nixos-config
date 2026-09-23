@@ -23,6 +23,7 @@
         openconnect
         llama-cpp-vulkan
         poppler-utils # pdfunite
+        xlsclients
       ];
 
       programs.direnv.enable = true;
