@@ -9,6 +9,7 @@
           {
             programs.zed-editor = {
               enable = true;
+              defaultEditor = true;
               extensions = [
                 # Theme
                 "jetbrains-new-ui-icons"

@@ -31,5 +31,19 @@
         enable = true;
         flake = "/home/atilo/nix-new#${config.networking.hostName}";
       };
+
+      programs.bash.interactiveShellInit = ''
+        alias switch="nh os switch"
+
+        # Delete words with Ctrl + Backspace
+        stty werase ^H
+
+        function watch() {
+            inotifywait -rme close_write,move,create,delete . |
+            while read; do
+                $@
+            done
+        }
+      '';
     };
 }
