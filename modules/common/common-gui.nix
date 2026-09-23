@@ -12,7 +12,6 @@
         krita
         spotify
         audacity
-        mission-center # task manager
         vlc
         tracy # profiler
         rnote
