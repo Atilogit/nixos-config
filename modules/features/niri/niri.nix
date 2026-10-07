@@ -43,6 +43,12 @@
         xdg-desktop-portal-gtk
         xdg-desktop-portal-gnome
         gnome-keyring
+
+        # wayscriber
+        wayscriber
+        grim
+        slurp
+        wl-clipboard
       ];
 
       programs.kdeconnect = {

@@ -13,4 +13,7 @@ binds {
     }
 
     Mod+End  { toggle-window-floating; }
+
+    Mod+F1 { spawn "wayscriber" "--daemon-toggle"; }
+    Mod+Shift+F1 { spawn "wayscriber" "--daemon-toggle" "--freeze"; }
 }
