@@ -48,10 +48,13 @@
         "nvme_core.mpoll=0"
         "acpi_enforce_resources=lax"
       ];
+      boot.kernel.sysctl = {
+        "vm.swappiness" = 10;
+      };
 
       powerManagement = {
         enable = true;
-        cpuFreqGovernor = "performance";
+        cpuFreqGovernor = "ondemand";
       };
       # Disable integrated graphics
       boot.blacklistedKernelModules = [ "amdgpu" ];
