@@ -11,4 +11,6 @@ binds {
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "vicinae" "toggle";
     }
+
+    Mod+End  { toggle-window-floating; }
 }
