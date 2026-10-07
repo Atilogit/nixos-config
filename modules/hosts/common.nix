@@ -35,5 +35,8 @@
       i18n.extraLocaleSettings = {
         LC_NUMERIC = "en_US.UTF-8";
       };
+
+      # ZSwap
+      boot.zswap.enable = true;
     };
 }
