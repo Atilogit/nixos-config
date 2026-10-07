@@ -21,6 +21,7 @@
         renderdoc
         handy # Voice to text
         kdePackages.filelight # Really fast disk usage
+        cosmic-term
 
         # Gnome
         xdg-user-dirs
