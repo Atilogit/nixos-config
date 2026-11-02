@@ -1,11 +1,11 @@
 { ... }:
 {
   flake.nixosModules.modrinth =
-    { pkgs-stable, ... }:
+    { pkgs, ... }:
     {
       # https://github.com/NixOS/nixpkgs/issues/359820
       # https://github.com/tauri-apps/tauri/issues/9394
-      environment.systemPackages = with pkgs-stable; [
+      environment.systemPackages = with pkgs; [
         (modrinth-app.overrideAttrs (oldAttrs: {
           buildCommand = ''
             					gappsWrapperArgs+=(
