@@ -7,17 +7,18 @@
       imports = [
         inputs.noctalia.nixosModules.default
       ];
-      services.noctalia-shell = {
+      programs.noctalia = {
         enable = true;
-        package = self.packages.${pkgs.stdenv.hostPlatform.system}.noctalia;
+        systemd.enable = true;
+        recommendedServices.enable = true;
       };
     };
-  perSystem =
-    { pkgs, ... }:
-    {
-      packages.noctalia = inputs.wrapper-modules.wrappers.noctalia-shell.wrap {
-        inherit pkgs;
-        settings = (builtins.fromJSON (builtins.readFile ./state.json)).settings;
-      };
-    };
+  # perSystem =
+  #   { pkgs, ... }:
+  #   {
+  #     packages.noctalia = inputs.wrapper-modules.wrappers.noctalia-shell.wrap {
+  #       inherit pkgs;
+  #       settings = (builtins.fromJSON (builtins.readFile ./state.json)).settings;
+  #     };
+  #   };
 }

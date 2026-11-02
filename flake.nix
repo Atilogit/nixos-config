@@ -1,8 +1,9 @@
 {
+  # https://status.nixos.org/
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    # nixpkgs-26.05-darwin
-    nixpkgs-stable.url = "github:nixos/nixpkgs?rev=d58a46e3bc02d91ebe04667f8397752a749c0024";
+    # nixos-26.05
+    nixpkgs-stable.url = "github:nixos/nixpkgs?rev=6fcc160353f63555b560f25588925133c8f61f2a";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";
@@ -15,10 +16,10 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    noctalia.url = "github:noctalia-dev/noctalia-shell/legacy-v4";
+    noctalia.url = "github:noctalia-dev/noctalia";
     noctalia.inputs.nixpkgs.follows = "nixpkgs";
 
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel?rev=29efd80e1929f7c8fc00d045a92b820609d725ca";
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
 
     plasma-manager.url = "github:nix-community/plasma-manager";
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
