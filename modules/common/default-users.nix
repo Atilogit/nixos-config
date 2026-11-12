@@ -11,6 +11,8 @@
           "libvirtd" # VMs
           "kvm" # Looking glass kvmfr
           "networkmanager"
+          "scanner"
+          "lp"
         ];
         packages = [ ];
       };
