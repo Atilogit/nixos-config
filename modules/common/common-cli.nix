@@ -24,6 +24,7 @@
         llama-cpp-vulkan
         poppler-utils # pdfunite
         xlsclients
+        diff-pdf
       ];
 
       programs.direnv.enable = true;
